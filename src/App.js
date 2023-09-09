@@ -1,13 +1,21 @@
+import React from 'react';
 import './App.css';
+import VideoList from './components/VideoList';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import VideoPlayer from "./components/VideoPlayer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-       <h1>React 18 Alpha test</h1>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <div className="app">
+            <Router>
+                <Routes>
+                    <Route path="/" element={<VideoList />} />
+                    <Route path="/video/:id" element={<VideoPlayer />} />
+                </Routes>
+            </Router>
+        </div>
+
+    );
 }
 
 export default App;
