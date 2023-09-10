@@ -12,7 +12,7 @@ function VideoList() {
     return (
         <div className="VideoList">
             <header className="VideoList-header">
-                <h1>Video List</h1>
+                <h1>Video List Page</h1>
             </header>
             <div className="VideoList-intro">
                 <div className="container">
