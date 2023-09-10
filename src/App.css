@@ -4,14 +4,28 @@
 
 .VideoList-header {
   display: block;
+  margin: 2px 0 0 0;
+  color: white;
 }
 .card-body .card-title{
-  color: #61dafb;
+  color: white;
 }
+
 .videoList-body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: red 1px solid;
+  /*border: red 1px solid;*/
+}
+.video{
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  background-color: #333;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*border: red 1px solid;*/
 }
 

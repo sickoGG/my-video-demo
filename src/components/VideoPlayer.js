@@ -8,7 +8,7 @@ function VideoPlayer() {
 
     <div className="video-player">
         <h2>{video.title}</h2>
-        <video width="640" height="360" controls>
+        <video width="640" height="360" controls autoPlay={true}>
             <source src={`/videos/${video.videoUrl}`} type="video/mp4" />
             Your browser does not support the video tag.
         </video>
