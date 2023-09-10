@@ -20,7 +20,7 @@ function VideoList() {
                         {videoData.map((video) => (
                             <div className="videoList-body col-md-4 mb-2" key={video.id}>
                                 <Link to={`/video/${video.id}`}>
-                                    <video className="video" muted loop
+                                    <video className="video" muted playsInline preload="metadata"
                                            onMouseOver={onMouseOverVideo}
                                            onMouseOut={onMouseOutVideo}
                                     >
